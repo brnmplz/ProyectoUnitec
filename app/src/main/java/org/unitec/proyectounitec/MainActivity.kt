@@ -1,7 +1,9 @@
 package org.unitec.proyectounitec
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.ejemplo.*
 
 // Es el punto de partida de toda app, MainActivity (Presenter)
 class MainActivity : AppCompatActivity() {
@@ -15,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         //toda fea, horrorosa sin swag ni nada
         //good luck, and don't F*ck it up.
         supportActionBar?.hide()
+botonsito.setOnClickListener {
+   var i = Intent(this,ComandoVozActivity::class.java)
+    startActivity(i)
+
+}
 
     }
 }
